@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 600px;
+            height: 5000px;            
+            background-color: yellow;
+            border: 1px solid black;            
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+        #bx1{
+            background-color: blueviolet;
+        }
+        #bx2{
+            background-color: red;
+            position: sticky;
+            top: 20px;
+            left: 30px;
+        }
+        #bx3{
+            background-color: green;
+            /* position: static; */
+            /* position: relative; */
+            /* top: -10px; */
+            /* left: 10px; */
+            /* right: 20px; */
+            /* bottom: 10px; */
+            /* position: absolute; */
+            /* left: 20px; */
+            /* top: 50px;
+            left: 20; */
+
+        }
+        #bx4{
+            background-color: blue;
+            position: fixed;
+            right: 5px;
+            bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- static, relative, absolute, sticky, fixed -->
+    <div class="wrapper">
+        <div class="box" id="bx1">Box 1</div>
+        <div class="box" id="bx2">Box 2</div>
+        <div class="box" id="bx3">Box 3</div>
+        <div class="box" id="bx4">Box 4</div>
+    </div>
+</body>
+</html>
