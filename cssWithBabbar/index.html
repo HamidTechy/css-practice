@@ -9,21 +9,30 @@
     <!-- Internal css -->
      <style>
         /* inline has more prefrence rule vise if we want internal then write !important */
-        p{
+        /* p{
             background-color: red !important;
-        }
+        } */
+        p{
+            background-color: aquamarine;
+         }
         h1{
             background-color: yellowgreen;
-            
+        }
+        /* we can specify class in different elements like i use same class in p tag and article but with p,paraLorem{} */
+        p.paraLorem{
+            text-align: center;
         }
      </style>
+     
 </head>
 <body>
     <h1>Welcome to CSS</h1>
     <!-- Inline css -->
     <p style="background-color: violet;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, porro!</p>
-    <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dignissimos saepe sequi placeat consequuntur dolorem pariatur, necessitatibus aperiam! Nostrum, mollitia?</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae soluta magni placeat, numquam sint repellat iure tempora quas facilis sit illum quasi iusto porro et doloribus nemo dicta temporibus natus.</p>
+    <p class="paraLorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dignissimos saepe sequi placeat consequuntur dolorem pariatur, necessitatibus aperiam! Nostrum, mollitia?</p>
+    <p class="paraLorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae soluta magni placeat, numquam sint repellat iure tempora quas facilis sit illum quasi iusto porro et doloribus nemo dicta temporibus natus.</p>
+    <article id="article1" class="paraLorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestias architecto culpa suscipit quod consequuntur sequi eius dignissimos nihil? Velit?</article>
+
     <footer>
         Hi this is footer
     </footer>

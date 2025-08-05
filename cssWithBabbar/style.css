@@ -1,3 +1,15 @@
 h1{
     text-align: center;
 }
+p{
+    background-color: red;
+}
+#article1{
+    background-color: yellow;
+}
+.paraLorem{
+    background-color: blue;
+}
+p,article{
+    width: 1200px;
+}
