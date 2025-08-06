@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       p {
         font-style: italic;
@@ -15,28 +18,48 @@
         font-family: "Mozilla Headline", sans-serif;
         font-weight: 800;
         line-height: 30px;
-        
+      }
+      /* named colour  */
+      #firstpara {
+        background-color: pink;
+      }
+      /* rgb colour picker */
+      #secondpara {
+        background-color: rgb(71, 58, 58, 0.4);
+      }
+      /* hex colour picker*/
+      #thirdpara {
+        background-color: #7da1db;
+      }
+      /* hsl colour picker */
+      .firstclass{
+        background-color: hsl(5, 50%, 80%);
       }
     </style>
   </head>
   <body>
     <h1>Welcome to Cascading style sheet</h1>
-    <p>
+    <p id="firstpara">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae animi
       autem fugit sequi quis rerum nemo mollitia, in molestias reprehenderit!
     </p>
-    <p>
+    <p id="secondpara">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
       molestias officia explicabo nesciunt deserunt sint, quis doloremque
       quidem, corporis maxime beatae eius. Harum, dolores doloremque porro
       voluptas dignissimos expedita iusto?
     </p>
-    <p>
+    <p id="thirdpara">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius recusandae
       corporis dolorem perspiciatis, quos sunt, commodi nulla laborum, repellat
       beatae esse. Similique, ab nemo iure velit iste magni, sequi harum
       voluptates libero perspiciatis, nihil distinctio totam neque excepturi
       perferendis cumque.
+    </p>
+    <p class="firstclass">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit in odit,
+      nihil aut, necessitatibus labore rem illum expedita quis, iusto
+      perspiciatis? Amet doloremque iure quis?
     </p>
   </body>
 </html>
