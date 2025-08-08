@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 2px solid rgb(170, 51, 51);
+            /* position: relative; */
+            height: 2000px;
+            background-color: black;
+            
+        }
+        img{
+            margin: 10px;
+        }
+        .pic3{
+            position: relative;
+            top: 100px;
+            left: 50px;
+        }
+        /* .pic1{
+            position:absolute;
+            top: 200px;
+        } */
+        .pic4{
+            position: fixed;
+            top: 50px;
+        }
+        .pic2{
+            position: sticky;
+            top: 100px;
+        }
+        .container2{
+            border: 2px solid brown;
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img 
+            src="HamidPic.jpg" 
+            alt="Black Suit"
+            width="280"
+            height="350"
+            class="pic1"
+        />
+        <img 
+            src="jersey.JPG" 
+            alt="Long H25r"
+            width="280"
+            height="350"
+            class="pic2"
+        />
+        <img 
+            src="noorMarquee.JPG" 
+            alt="waqas Wedding"
+            width="280"
+            height="350"
+            class="pic3"
+        />
+        <img 
+            src="BlueShirt.JPG" 
+            alt="Blue Shirt"
+            width="280"
+            height="350"
+            class="pic4"
+        />
+    </div>
+    <div class="container2"></div>
+</body>
+</html>
