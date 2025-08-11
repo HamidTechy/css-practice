@@ -36,7 +36,7 @@
             /* align-items: end; */
             /* align-items: center; */
             flex-direction: row;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             /* align-content: start; */
             /* align-content: center; */
             /* align-content: end; */
@@ -51,18 +51,27 @@
             height: 120px;
             margin: 2px;
             padding: 2px;
+            /* flex-grow: 1; */
         }
         #box1{
-            background-color: aqua;
+            background-color: rgb(43, 124, 124);
+            order: 5;
         }
         #box2{
             background-color: rgb(202, 161, 49);
+            order: 4;
         }
         #box3{
             background-color: rgb(168, 23, 30);
+            order: 3;
+            /* flex-shrink: 2; */
+            /* flex-grow: 3; */
+
         }
         #box4{
             background-color: rgb(50, 39, 196);
+            order: 2;
+            flex-grow: 1;
         }
     </style>
 </head>
