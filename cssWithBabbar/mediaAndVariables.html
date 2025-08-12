@@ -6,23 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .container{
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+        }
         .box{
             background-color: aqua;
             border: 2px solid black;
-            width: 250px;
-            height: 250px;
+            width: 150px;
+            height: 150px;
 
         }
-        @media (min-width:600px) and (max-width:900px){
-            .box{
-                background-color: red;
+        @media (max-width: 600px){
+            .container{
+                flex-direction: column;
             }
         }
+        
     </style>
 </head>
 <body>
-    <div class="box">
-        media query
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
 </body>
 </html>
