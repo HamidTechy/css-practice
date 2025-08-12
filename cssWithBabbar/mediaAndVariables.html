@@ -10,29 +10,53 @@
             border: 2px solid black;
             margin: 2px;
             padding: 2px;
+            background-color: rgb(210, 216, 207);
+            width: 500px;
             display: flex;
+            flex-direction: row;
         }
-        .box{
-            background-color: aqua;
-            border: 2px solid black;
-            width: 150px;
-            height: 150px;
-
+        .textbox{
+            border: 1px solid black;
+            background-color: rgb(27, 104, 100);
+            margin: 3px;
+            padding: 2px;
+            /* height: 250px; */
+            width: 48%;
         }
-        @media (max-width: 600px){
+        .imgbox{
+            border: 1px solid black;
+            background-color: rgb(173, 151, 122);
+            margin: 3px;
+            padding: 2px;
+            width: 48%;
+            /* height: 250px; */
+        }
+        p{
+            border: 1px solid black;
+        }
+        img{
+            height: 240px;
+            width: 98%;
+            
+        }
+        @media (max-width: 640px) {
             .container{
                 flex-direction: column;
             }
+                      
         }
         
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="textbox">
+            <p>text 1 </p>
+            <p>text 2</p>
+        </div>
+        <div class="imgbox">
+            <img src="arabicTurban.jpg" alt="Arabic Style Scarf">
+        </div>
     </div>
 </body>
 </html>
