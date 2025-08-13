@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root{
+            --brown-color: rgb(87, 38, 36);
+            --custom-width: 250px;
+        }
         .container{
             background-color: beige;
             border: 2px solid black;
@@ -16,8 +20,10 @@
         }
         .box{
             border: 2px solid black;
-            background-color: rgb(107, 147, 192);
-            width: 250px;
+            /* background-color: rgb(107, 147, 192); */
+            background-color: var(--brown-color);
+            width: var(--custom-width);
+            /* width: 250px; */
             height: 250px;
             margin: 2px;
             padding: 2px;
