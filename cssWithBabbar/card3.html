@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background: #141e30; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #243b55,
+          #141e30
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #243b55,
+          #141e30
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .cardbox {
+        width: 70vw;
+        height: 50vh;
+        display: flex;
+        color: azure;
+        
+      }
+      .leftbox {
+        background: #780206; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #061161,
+          #780206
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #061161,
+          #780206
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 40vh;
+        width: 35vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        gap: 40px;
+      }
+      .rightbox img{
+        width: 35vw;
+        height: 40vh;
+      }
+      .leftbox h2{
+        font-size: 35px;
+      }
+      .leftbox p{
+        font-size: 12px;
+      }
+      .footerbox{
+        display: flex;
+        gap: 70px;
+      }
+      .footerbox .parasize{
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cardbox">
+        <div class="leftbox">
+          <h2>Get insights that help your business grow</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis aliquid necessitatibus corrupti fugit veniam quia id
+            numquam eius non neque explicabo soluta atque rerum, nihil provident
+            quasi est tenetur ut voluptates debitis illum cumque et? Molestias
+            commodi impedit sapiente eveniet?
+          </p>
+          <div class="footerbox">
+            <div class="comment">
+              <p class="parasize">100K+</p>
+              <p>Comments</p>
+            </div>
+            <div class="paid">
+              <p class="parasize">214</p>
+              <p>Paid User</p>
+            </div>
+            <div class="view">
+              <p class="parasize">12M+</p>
+              <p>Views</p>
+            </div>
+          </div>
+        </div>
+        <div class="rightbox">
+          <img src="techManagment.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
