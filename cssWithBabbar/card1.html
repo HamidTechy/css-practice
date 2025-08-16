@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Card</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background: #2193b0; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #6dd5ed,
+          #2193b0
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #6dd5ed,
+          #2193b0
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .cardbox {
+        height: 450px;
+        width: 300px;
+        background-color: azure;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .bluebox {
+        width: 280px;
+        height: 260px;
+        background: #0575e6; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #021b79,
+          #0575e6
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #021b79,
+          #0575e6
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        position: relative;
+        border-radius: 10px;
+        padding: 0px;
+      }
+      img {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        width: 200px;
+        height: 220px;
+        
+      }
+      .cardbox h2{
+        font-size: 25px;
+        position: relative;
+        left: 10px;
+      }
+      .cardbox p{
+        position: relative;
+        left: 10px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cardbox">
+            <div class="bluebox">
+              <img src="linkedinQRCode.png" alt="Linkedin Profile" />
+            </div>
+          
+          <h2>Improve your frontend skills by building projects</h2>
+            <p>
+              Scan QR code to visit my linkedin profile to see my performance of
+              100 days of code
+            </p>
+      </div>
+    </div>
+  </body>
+</html>
