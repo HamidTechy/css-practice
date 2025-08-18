@@ -12,12 +12,113 @@
     padding: 2rem ;
     margin: 0 auto;
 }
-h2{
+.header_container{
+    margin-bottom: 2.5rem;
+}
+.header_container p{
+    color: rgb(85, 82, 82);
+    text-align: center;
+}
+.header_title{
+    text-align: center;
+    font-size: 28px;
+    line-height: 2rem;
+    margin: 0 auto;
+    
+}
+.main_container{
+    display: grid;
+    grid-template-columns: repeat(4, fr);
+    gap: 1.4rem;
+}
+.card_container{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+.card_img_anchor{
+    position: relative;
+    overflow: hidden;
+    height: 15rem;
+}
+.card_img{
+    object-fit: cover;
+    object-position: center;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+
+}
+.card_title_container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.card_disc{
     color: gray;
+}
+
+
+.card_title{
+    color: rgb(19, 18, 18);
+    margin-bottom: 0.3rem;
 }
 a{
     text-decoration: none;
 }
 .card_title:hover{
     color: blue;
+}
+.card_container:hover .card_img{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.author_avatar{
+    height: 3rem;
+    width: 3rem;
+    
+    
+}
+.author_avatar_container{
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid black;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: rgba(85, 85, 83, 0.356);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.author_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.card_footer_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+.author_info_container{
+    display: flex;
+    flex-direction: column  ;
+}
+.author_name{
+    color: rgb(53, 53, 235);
+    font-size: 1.3rem;
+}
+.book_date{
+    color: rgba(90, 83, 83, 0.5);
+    font-size: 1.1;
+}
+.card_tag_container{
+    border: 2px solid rgb(121, 115, 115);
+    height: 35px;
+    width: 125px;
+    color: rgba(20, 20, 20, 0.438);
+    text-align: center;
+    border-radius: 3px;
+    padding-top: 5px;
 }
