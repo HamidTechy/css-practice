@@ -9,7 +9,7 @@
 }
 .container{
     max-width: 90vw;
-    padding: 2rem ;
+    padding: 2rem 1rem;
     margin: 0 auto;
 }
 .header_container{
@@ -28,8 +28,8 @@
 }
 .main_container{
     display: grid;
-    grid-template-columns: repeat(4, fr);
-    gap: 1.4rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
 }
 .card_container{
     display: flex;
@@ -119,6 +119,6 @@ a{
     width: 125px;
     color: rgba(20, 20, 20, 0.438);
     text-align: center;
-    border-radius: 3px;
+    border-radius: 8px;
     padding-top: 5px;
 }
