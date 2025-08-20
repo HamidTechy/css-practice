@@ -22,15 +22,87 @@
     height: 100vh;
     text-align: center;
     background-color: var(--background-color);
-    padding: 2rem;
+    padding: 0.1rem;
     
 }
 .header_content{
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    padding: 1rem;
+}
+
+.logo{
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.625rem;
+}
+.logo_icon{
+    height: 5.875;
+    width: 1.938;
 }
 .nav{
+    display: none;
+    align-items: center;
+    gap: 1.5rem;
+}
+@media screen and (min-width:780px){
+    .nav{
+        display: flex;
+    }
+    
+}
 
+.nav_link{
+    color: #718096;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: color 0.1s;
+}
+.nav_link:hover{
+    color: var(--link-color);
+}
+.contact_button{
+    width: 115px;
+    height: 2.50rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transition: all 0.1s;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width:780px){
+    .contact_button{
+        display: flex;
+    }
+    
+}
+.contact_button:hover{
+    background-color: #5254f8;
+}
+.menu_button{
+    display: none;
+    border: none;
+    align-items: center;
+}
+.menu_icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+@media  screen and (max-width:779px){
+    .menu_button{
+        display: flex;
+    }
+    
 }
